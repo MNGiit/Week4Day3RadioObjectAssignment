@@ -11,13 +11,8 @@ class Radio {
         this.stations = stations;
     }
     randomStation() {
-        // let random = Math.floor(Math.random() * (this.stations.length -1))
-        // return Math.floor(Math.random() * (max - min + 1)) + min;
-        // Math.floor(Math.random() * (stations.length-1) + 0);
         let rStation = Math.floor(Math.random() * (this.stations.length) + 0);
-        console.log("Random is:", rStation);
         let rSong = Math.floor(Math.random() * (this.stations[rStation].songs.length) + 0);
-        console.log("Random song int is:", rSong);
         console.log(`Now Playing: ${this.stations[rStation].songs[rSong].title} by ${this.stations[rStation].songs[rSong].artist}`)
     }
 }
