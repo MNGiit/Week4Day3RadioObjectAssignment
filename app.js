@@ -17,3 +17,10 @@ class Station {
         this.songs = songs;
     }
 }
+
+class Song {
+    constructor(title, artist) {
+        this.title = title;
+        this.artist = artist;
+    }
+}
