@@ -24,3 +24,10 @@ class Song {
         this.artist = artist;
     }
 }
+
+let songs = [];
+songs.push(new Song("Classical 1", "Ancient Musician 1"));
+songs.push(new Song("Classical 2", "Ancient Musician 1"));
+songs.push(new Song("Classical 3", "Ancient Musician 2"));
+songs.push(new Song("Classical 4", "Ancient Musician 2"));
+songs.push(new Song("Classical 5", "Ancient Musician 3"));
