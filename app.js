@@ -38,3 +38,7 @@ songs.push(new Song("Synthwave 2", "Synthwave Musician 1"));
 songs.push(new Song("Synthwave 3", "Synthwave Musician 2"));
 songs.push(new Song("Synthwave 4", "Synthwave Musician 2"));
 songs.push(new Song("Synthwave 5", "Synthwave Musician 3"));
+
+let stations = [];
+stations.push(new Station("Classic music rocks", [songs[0], songs[1], songs[2], songs[3], songs[4]]));
+stations.push(new Station("Synthwave is better", [songs[5], songs[6], songs[7], songs[8], songs[9]]));
