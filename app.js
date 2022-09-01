@@ -12,3 +12,8 @@ class Radio {
     }
 }
 
+class Station {
+    constructor(songs) {
+        this.songs = songs;
+    }
+}
