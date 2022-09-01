@@ -44,8 +44,16 @@ songs.push(new Song("Synthwave 3", "Synthwave Musician 2"));
 songs.push(new Song("Synthwave 4", "Synthwave Musician 2"));
 songs.push(new Song("Synthwave 5", "Synthwave Musician 3"));
 
+songs.push(new Song("Country 1", "Country Musician 1"));
+songs.push(new Song("Country 2", "Country Musician 1"));
+songs.push(new Song("Country 3", "Country Musician 2"));
+songs.push(new Song("Country 4", "Country Musician 2"));
+songs.push(new Song("Country 5", "Country Musician 3"));
+
 let stations = [];
 stations.push(new Station("Classic music rocks", [songs[0], songs[1], songs[2], songs[3], songs[4]]));
 stations.push(new Station("Synthwave is better", [songs[5], songs[6], songs[7], songs[8], songs[9]]));
+stations.push(new Station("Country is back!", [songs[10], songs[11], songs[12], songs[13], songs[14]]));
+
 
 let radio = new Radio(stations);
