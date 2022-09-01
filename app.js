@@ -67,4 +67,9 @@ changeStationRandomly = () => {
    let nums = radio.randomStation();
    let stationName = document.querySelector(".station");
    stationName.innerHTML = stations[nums[0]].name;
+   let song = document.querySelector(".song");
+   let title = stations[nums[0]].songs[nums[1]].title;
+   let artist = stations[nums[0]].songs[nums[1]].artist;
+   // console.log(title, artist);
+   song.innerHTML = `Now Playing: ${title} by ${artist}`;
 }
