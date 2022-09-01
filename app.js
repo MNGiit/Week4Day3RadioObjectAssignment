@@ -16,7 +16,9 @@ class Radio {
         // Math.floor(Math.random() * (stations.length-1) + 0);
         let rStation = Math.floor(Math.random() * (this.stations.length) + 0);
         console.log("Random is:", rStation);
-        console.log(`Now Playing: ${this.stations[rStation].title} by ${this.stations[rStation].artist}`)
+        let rSong = Math.floor(Math.random() * (this.stations[rStation].songs.length) + 0);
+        console.log("Random song int is:", rSong);
+        console.log(`Now Playing: ${this.stations[rStation].songs[rSong].title} by ${this.stations[rStation].songs[rSong].artist}`)
     }
 }
 
