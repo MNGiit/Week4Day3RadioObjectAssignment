@@ -10,6 +10,13 @@ class Radio {
     constructor(stations) {
         this.stations = stations;
     }
+    randomStation() {
+        // let random = Math.floor(Math.random() * (this.stations.length -1))
+        // return Math.floor(Math.random() * (max - min + 1)) + min;
+        // Math.floor(Math.random() * (stations.length-1) + 0);
+        let random = Math.floor(Math.random() * (this.stations.length) + 0);
+        console.log(`Now Playing: ${this.stations[random].title} by ${this.stations[random].artist}`)
+    }
 }
 
 class Station {
@@ -42,3 +49,5 @@ songs.push(new Song("Synthwave 5", "Synthwave Musician 3"));
 let stations = [];
 stations.push(new Station("Classic music rocks", [songs[0], songs[1], songs[2], songs[3], songs[4]]));
 stations.push(new Station("Synthwave is better", [songs[5], songs[6], songs[7], songs[8], songs[9]]));
+
+let radio = new Radio(stations);
