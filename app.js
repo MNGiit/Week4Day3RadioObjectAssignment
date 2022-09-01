@@ -14,6 +14,7 @@ class Radio {
         let rStation = Math.floor(Math.random() * (this.stations.length) + 0);
         let rSong = Math.floor(Math.random() * (this.stations[rStation].songs.length) + 0);
         console.log(`Now Playing: ${this.stations[rStation].songs[rSong].title} by ${this.stations[rStation].songs[rSong].artist}`)
+        return [rStation, rSong];
     }
 }
 
@@ -30,6 +31,8 @@ class Song {
         this.artist = artist;
     }
 }
+
+
 
 let songs = [];
 songs.push(new Song("Classical 1", "Ancient Musician 1"));
@@ -57,3 +60,11 @@ stations.push(new Station("Country is back!", [songs[10], songs[11], songs[12], 
 
 
 let radio = new Radio(stations);
+
+
+changeStationRandomly = () => {
+   // alert("clicked!") 
+   let nums = radio.randomStation();
+   let stationName = document.querySelector(".station");
+   stationName.innerHTML = stations[nums[0]].name;
+}
