@@ -31,3 +31,9 @@ songs.push(new Song("Classical 2", "Ancient Musician 1"));
 songs.push(new Song("Classical 3", "Ancient Musician 2"));
 songs.push(new Song("Classical 4", "Ancient Musician 2"));
 songs.push(new Song("Classical 5", "Ancient Musician 3"));
+
+songs.push(new Song("Synthwave 1", "Synthwave Musician 1"));
+songs.push(new Song("Synthwave 2", "Synthwave Musician 1"));
+songs.push(new Song("Synthwave 3", "Synthwave Musician 2"));
+songs.push(new Song("Synthwave 4", "Synthwave Musician 2"));
+songs.push(new Song("Synthwave 5", "Synthwave Musician 3"));
